@@ -48,10 +48,10 @@ jobs:
             ls -la preprocessing/
             
             # Check for preprocessing script
-            if [ -f "preprocessing/automate-Shalsabilla-Amanda-Putri.py" ]; then
+            if [ -f "preprocessing/automate_Shalsabilla-Amanda-Putri.py" ]; then
               echo "✓ Found preprocessing script"
             else
-              echo "❌ automate-Shalsabilla-Amanda-Putri.py not found in preprocessing directory"
+              echo "❌ automate_Shalsabilla-Amanda-Putri.py not found in preprocessing directory"
               exit 1
             fi
           else
@@ -65,9 +65,9 @@ jobs:
           echo "🔄 Starting data preprocessing..."
           
           # Check if automate script exists
-          if [ -f "automate-Shalsabilla-Amanda-Putri.py" ]; then
-            echo "Running automate-Shalsabilla-Amanda-Putri.py..."
-            python automate-Shalsabilla-Amanda-Putri.py
+          if [ -f "automate_Shalsabilla-Amanda-Putri.py" ]; then
+            echo "Running automate_Shalsabilla-Amanda-Putri.py..."
+            python automate_Shalsabilla-Amanda-Putri.py
             
             # Check if script ran successfully
             if [ $? -eq 0 ]; then
@@ -77,7 +77,7 @@ jobs:
               exit 1
             fi
           else
-            echo "❌ automate-Shalsabilla-Amanda-Putri.py not found"
+            echo "❌ automate_Shalsabilla-Amanda-Putri.py not found"
             exit 1
           fi
 
